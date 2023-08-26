@@ -12,11 +12,12 @@
 
         {{-- TailwindCSS with Vite--}}
         @livewireStyles
-        @vite('resources/css/app.css')
+        @vite('resources/css/app.css','resources/js/app.js')
     </head>
     <body class="antialiased">
-        <h1>Hello Wordl</h1>
+        @livewire('create-post')
 
+        
         @livewireScripts
     </body>
 </html>
